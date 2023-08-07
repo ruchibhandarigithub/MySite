@@ -1,0 +1,26 @@
+.timeline-content {
+  background-color: white;
+  border-radius: 0.5em;
+  text-align: left;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.timeline-content h3 {
+  margin: 0;
+}
+
+.timeline-content .hidden-date {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .timeline-content .hidden-date {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,14 @@
+.section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.section-heading.primary {
+  color: var(--primary-theme);
+}
+
+.section-heading.black {
+  color: black;
+}

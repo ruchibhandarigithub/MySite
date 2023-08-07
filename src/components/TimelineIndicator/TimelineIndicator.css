@@ -1,0 +1,29 @@
+.timeline-indicator {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: solid 4px black;
+  background-color: white;
+  position: absolute;
+}
+
+.timeline-indicator.left {
+  right: -18px;
+}
+
+.timeline-indicator.right {
+  left: -18px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .timeline-indicator.right.reverse {
+    left: auto;
+    right: -18px;
+  }
+
+  .timeline-indicator.left.reverse {
+    right: auto;
+    left: -18px;
+  }
+}

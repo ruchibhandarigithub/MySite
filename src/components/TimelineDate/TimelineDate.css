@@ -1,0 +1,6 @@
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .timeline-date {
+    display: none;
+  }
+}

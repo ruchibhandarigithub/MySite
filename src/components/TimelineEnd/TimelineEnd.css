@@ -1,0 +1,25 @@
+.timeline-end {
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.timeline-end.left {
+  right: -11px;
+  bottom: 98%;
+}
+
+.timeline-end.right {
+  left: -11px;
+  top: 98%;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 500px) {
+  .timeline-end.right {
+    left: auto;
+    right: -11px;
+  }
+}

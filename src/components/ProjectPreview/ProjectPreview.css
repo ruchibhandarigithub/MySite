@@ -1,0 +1,42 @@
+.project-preview {
+  flex-basis: 32%;
+  border-radius: 0.5em;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-preview span {
+  position: absolute;
+  color: white;
+  font-weight: 600;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.project-preview:hover img {
+  opacity: 0.3;
+}
+
+.project-preview:hover span {
+  visibility: visible;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+  .project-preview {
+    flex-basis: 48%;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-preview {
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,24 @@
+.contact-link {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 2px var(--primary-theme);
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.contact-link .icon {
+  color: var(--primary-theme);
+}
+
+.contact-link:hover {
+  background-color: var(--primary-theme);
+}
+
+.contact-link:hover .icon {
+  color: white;
+}

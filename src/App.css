@@ -1,0 +1,316 @@
+/* HEADER */
+header {
+  padding: 1.25em 0;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+header .logo {
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+header .logo:hover {
+  color: white;
+  border-color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2em;
+}
+
+.nav-links li {
+  color: var(--secondary-theme);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  font-size: 1rem;
+}
+
+.nav-links li:hover {
+  color: white;
+}
+
+.nav-links.collapse {
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  gap: 3em;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+nav .icon {
+  color: var(--secondary-theme);
+  font-size: 1.5rem;
+}
+
+nav button:hover .icon {
+  color: white;
+}
+
+/* MAIN */
+section {
+  position: relative;
+}
+
+.intro {
+  background-color: black;
+}
+
+.intro .background-image {
+  height: 100vh;
+  width: 100%;
+  max-width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1.5s ease-in;
+}
+
+.intro .background-image p {
+  font-size: 1.5rem;
+  font-family: "Patua One", cursive;
+  color: var(--secondary-theme);
+  letter-spacing: 0.05rem;
+}
+
+.about {
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.section-intro {
+  max-width: 600px;
+  margin: 0 auto 3em;
+  font-size: 1.1rem;
+}
+
+.about .cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.journey {
+  background-color: #ebf3f7;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.journey .timeline {
+  margin-top: 4em;
+}
+
+.journey .timeline .row {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.journey .row > div {
+  flex-basis: 100%;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.journey .row .container-lhs {
+  justify-content: flex-end;
+  border-right: solid 6px black;
+  position: relative;
+  padding-left: 0;
+}
+
+.journey .row .container-rhs {
+  position: relative;
+  padding-right: 0;
+}
+
+.journey h3 {
+  color: var(--primary-theme);
+}
+
+.projects {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  text-align: center;
+}
+
+.projects .previews-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+.cta {
+  padding-top: 4em;
+  padding-bottom: 4em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.cta h2 {
+  margin: 0;
+}
+
+.cta a {
+  padding: 0.5em 1em;
+  color: var(--primary-theme);
+  background-color: white;
+  text-transform: capitalize;
+  border: solid 2px var(--primary-theme);
+  border-radius: 0.5em;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1em;
+  transition: all 0.5s ease;
+}
+
+.cta a:hover {
+  color: white;
+  background-color: var(--primary-theme);
+}
+
+/* FOOTER */
+footer {
+  background-color: #ebf3f7;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  margin-top: 4em;
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .logo {
+  color: var(--primary-theme);
+  border-color: var(--primary-theme);
+  background-color: white;
+}
+
+footer .links-container {
+  display: flex;
+  gap: 1em;
+}
+
+footer .copyright .icon {
+  margin-right: 0.5em;
+}
+
+/* HEADINGS */
+h1 {
+  font-size: 4rem;
+  font-family: "Patua One", cursive;
+  color: white;
+  letter-spacing: 0.05rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-theme);
+  margin-bottom: 0.5em;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 800px) {
+  .about .cards-container {
+    flex-wrap: wrap;
+  }
+
+  .projects .previews-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  nav button {
+    display: inline-block;
+  }
+
+  nav > div .nav-links {
+    display: none;
+  }
+
+  .intro .background-image p {
+    font-size: 1.25rem;
+  }
+
+  h1 {
+    font-size: 2.75rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .journey .timeline .row.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .journey .row.reverse .container-rhs {
+    justify-content: flex-end;
+    border-right: solid 6px black;
+    position: relative;
+    padding: 2em;
+    padding-left: 0;
+  }
+
+  .journey .row.reverse .container-lhs {
+    position: relative;
+    justify-content: flex-start;
+    border-right: none;
+    padding: 2em;
+    padding-right: 0;
+  }
+
+  .journey .row .content-container {
+    margin-right: 2em;
+  }
+
+  .journey .row .date-container {
+    flex-basis: 0;
+  }
+
+  .journey .row .content-container {
+    flex-basis: 100%;
+  }
+}
