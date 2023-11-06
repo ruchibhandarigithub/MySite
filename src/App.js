@@ -23,7 +23,7 @@ import profileImgSrc from "./images/profile-background.jpg";
 import CrytolsForMe from "./images/CrytolsForMe.PNG";
 import ShoppingCart from "./images/Shoping-cart.PNG";
 
-import websitePreview from "./images/website-preview.png";
+import websitePreview from "./images/websitePreview.PNG";
 import { useEffect, useRef, useState } from "react";
 
 import AOS from "aos";
@@ -61,9 +61,9 @@ const skills = [
 
 const projects = [
   {
-    url: "https://ruchibhandarigithub.github.io/CrytolsForMe/",
+    url: "https://crypto-trackor-k72f.vercel.app/",
     imgSrc: CrytolsForMe,
-    description: "CrytolsForMe",
+    description: "CrytoControl",
   },
   {
     url: "https://ruchibhandarigithub.github.io/Shopping-Cart-Application/",
@@ -71,9 +71,9 @@ const projects = [
     description: "Shoping Cart Application",
   },
   {
-    url: "https://rrsportsmassage.netlify.app/",
+    url: "https://finance-app-roan.vercel.app/dashboard",
     imgSrc: websitePreview,
-    description: "Massage App",
+    description: "Finance Trackor",
   },
 ];
 
