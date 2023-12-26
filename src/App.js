@@ -22,8 +22,9 @@ import "./App.css";
 import profileImgSrc from "./images/profile-background.jpg";
 import CrytolsForMe from "./images/CrytolsForMe.PNG";
 import ShoppingCart from "./images/Shoping-cart.PNG";
-
+import GoogleKeep from './images/google-keep.PNG';
 import websitePreview from "./images/websitePreview.PNG";
+import ecommerce from './images/e-commerce.PNG';
 import { useEffect, useRef, useState } from "react";
 
 import AOS from "aos";
@@ -37,6 +38,7 @@ import ContactLink from "./components/ContactLink/ContactLink";
 import TimelineIndicator from "./components/TimelineIndicator/TimelineIndicator";
 import TimelineEnd from "./components/TimelineEnd/TimelineEnd";
 import SectionHeading from "./components/SectionHeading/SectionHeading";
+
 AOS.init();
 
 const skills = [
@@ -45,16 +47,16 @@ const skills = [
     title: "Frontend Developer",
     description:
       "I have significant experience building frontend websites, web apps and games",
-    languages: "JavaScript, HTML, CSS, SASS",
-    frameworks: "React Js, jQuery, Tailwind UI",
+    languages: "JavaScript, HTML, CSS",
+    frameworks: "React Js, Tailwind UI",
   },
   {
     icon: faServer,
     title: "Backend Developer",
     description:
       "I have developed several full-stack web apps with user authentication and profiles",
-    languages: "Java",
-    frameworks: "SpringBoot, Firebase",
+    languages: "Javascript",
+    frameworks: "Expressjs, Firebase",
   }
   
 ];
@@ -74,6 +76,16 @@ const projects = [
     url: "https://finance-app-roan.vercel.app/dashboard",
     imgSrc: websitePreview,
     description: "Finance Trackor",
+  },
+  {
+    url: "https://google-keep-clone-4wo9.vercel.app/",
+    imgSrc: GoogleKeep,
+    description: "Google Keep Clone",
+  },
+  {
+    url: "https://e-commerce-tan-psi.vercel.app/signup",
+    imgSrc: ecommerce,
+    description: "E-Commerce DashBoard",
   },
 ];
 
@@ -267,8 +279,8 @@ const App = () => {
                     title="Accio Job"
                     date="August 2022"
                     description="Software Development Trainee"
-                    skills="Learned Data Struture and Algorithm using java , SpringBoot , Html, Css, Bootstrap , JavaScript and,
-                    ReactJs"
+                    skills="Learned Data Struture and Algorithm using java  , Html, Css, Bootstrap , JavaScript Reactjs ,Nodejs,Expressjs MongoDb ,
+                    "
                   />
                 </div>
               </div>
@@ -321,7 +333,7 @@ const App = () => {
           </p>
 
           <a
-            href="mailto: ryan.henzell-hill@outlook.com"
+            href="mailto: bhandariruchi498@gmail.com"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
